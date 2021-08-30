@@ -38,6 +38,7 @@ Partial Class Form1
         Me.dec_lable = New System.Windows.Forms.Label()
         Me.bin_lable = New System.Windows.Forms.Label()
         Me.oct_lable = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Led0_btn
@@ -224,11 +225,22 @@ Partial Class Form1
         Me.oct_lable.TabIndex = 16
         Me.oct_lable.Text = "OCT"
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(300, 80)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(243, 25)
+        Me.Label1.TabIndex = 17
+        Me.Label1.Text = "Test Convert Type Data"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(120.0!, 120.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         Me.ClientSize = New System.Drawing.Size(882, 553)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.oct_lable)
         Me.Controls.Add(Me.bin_lable)
         Me.Controls.Add(Me.dec_lable)
@@ -269,4 +281,5 @@ Partial Class Form1
     Friend WithEvents dec_lable As Label
     Friend WithEvents bin_lable As Label
     Friend WithEvents oct_lable As Label
+    Friend WithEvents Label1 As Label
 End Class
