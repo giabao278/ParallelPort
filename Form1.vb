@@ -157,4 +157,8 @@
                 End If
         End Select
     End Sub
+
+    Private Sub Led7_btn_Click(sender As Object, e As EventArgs) Handles Led7_btn.Click
+
+    End Sub
 End Class
